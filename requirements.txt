@@ -1,0 +1,7 @@
+pandas
+boto3
+pytest
+moto==4.2.14        # ultima versione stabile, compatibile con Python 3.10
+databricks-api
+requests
+pytest-mock       
