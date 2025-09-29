@@ -1,5 +1,5 @@
 import pytest
-from prove import trigger_lambda_mock
+#from prove import trigger_lambda_mock
 import boto3
 
 # fixture che prepara dati e funzione

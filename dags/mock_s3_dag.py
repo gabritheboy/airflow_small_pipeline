@@ -20,7 +20,8 @@ def create_mock_s3():
     s3.create_bucket(Bucket=BUCKET_OUTPUT)
     csv_data = "id,speed\n1,50\n2,60\n3,70"
     s3.put_object(Bucket=BUCKET_INPUT, Key=KEY_INPUT, Body=csv_data)
-    print(f"[Extract] File CSV caricato in {BUCKET_INPUT}/{KEY_INPUT}")
+    file_path = f"s3://{BUCKET_INPUT}/{KEY_INPUT}"
+    print(f"[Extract] File CSV caricato in {file_path}")
 
 
 @mock_lambda
